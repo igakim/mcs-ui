@@ -16,9 +16,6 @@ before_script:
 after_script:
   - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 
-after_script:
-  - codeclimate-test-reporter < ./coverage/lcov.info
-
 env:
   global:
     secure: ngwKDpJmhxOiFLt0t40/jPCTy/WyDkzEcX+cPLJaT609XGrDD1HDGzqtFLlnwM+A0liQl0ka2h4Bqd0w32hQLzhD/uI1vQOvez9djC8uMtOnEPDoIMnP/kYGy7xeUMEIMKOEql7yGQ6OgsTomkMr7M+n8z+gAAKJr0AmqNttiO2hHlO/08GwJOR9upaxH8vRqQzgI7OREccjZogbbd5LF1wDoU3T2lneFAkhzQfRNL+kB1g8VbmQVrMv3y66YbbOIt2cBlMjsYn8rVU8F/kFWtAYcJ/yqNQ/x0V1lQOcrlX0cJZzTr4rLhcqCeKZ1D1ljv/YOr7ueZxlVB3FSaoCx97s17SHLMW5Ffc7jUB3aWRThzY4Ett3XTd3nTOXB9rHJf/sNKP66oKO3LU2gUe5Mga9WejNfWEw3pMO2/IxALJ2ZDcmYyRnq3nyoQL8QGatWAQqSeQMeOG0ayGgtc7FiDmKWK0vrv40Gchc5FJhyDLFnqskvpJXae9OtR8sV+0ZgG3vT/AZWuX3k9I9wrr3AHJBhtPW/omIVBiEtGhuOUUxM+TrF1zM8lemVjtgdgZfCLh0iqk23J4l9dUvYXlCY7gkeaGHNR08U2XZmB0+NPIOJwcGmCN8/0SSaPHOHObYDNsOe8lwGQLzGeQwBKwsmeOH43NhTKL2RE+WCCCShj8=
