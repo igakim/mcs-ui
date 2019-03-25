@@ -1,0 +1,12 @@
+src
+examples
+.babelrc
+.gitignore
+webpack.config.js
+template.html
+doc.md
+.travis.yml
+.eslintignore
+.eslintrc.yml
+__tests__
+node_modules

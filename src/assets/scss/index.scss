@@ -1,0 +1,9 @@
+@import "./partials/mixins";
+@import "./partials/params";
+@import "./button.scss";
+
+@include load-google-font("Montserrat");
+
+html, body {
+  font-family: "Montserrat";
+}

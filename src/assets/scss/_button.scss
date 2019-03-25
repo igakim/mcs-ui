@@ -1,0 +1,54 @@
+.mcs-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: .3s;
+  font-family: "Montserrat";
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.4);
+  box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.4);
+  &:disabled {
+    background-color: lighten(grey, 30%);
+    border: 1px solid lighten(grey, 30%);
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    opacity: .6;
+    color: $lightTextColor;
+    cursor: not-allowed;
+    &:hover {
+      background-color: lighten(grey, 30%);
+      border: 1px solid lighten(grey, 30%);
+      -webkit-box-shadow: none;
+      -moz-box-shadow:    none;
+      box-shadow:         none;
+      opacity: .6;
+      color: $lightTextColor;
+    }
+  }
+  &-small {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  &-medium {
+    padding: 8px 16px;
+    border-radius: 13px;
+    font-size: 16px;
+  }
+  &-stretched {
+    width: 100%;
+  }
+  @each $type, $color in $buttons {
+    &-#{$type} {
+      border: 1px solid $color;
+      background-color: $color;
+      color: $lightTextColor;
+      &:hover {
+        background-color: $lightTextColor;
+        color: $color;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Main colors;
+$primaryColor: #77A6F7;
+$secondaryColor: #D3E3FC;
+$dangerColor: #FFCCBC;
+$infoColor: #84CEEB;
+$warningColor: #F8E9A1;
+$successColor: #57BA98;
+
+// Text colors
+$lightTextColor: #FFF;
+
+// Buttons types
+$buttons: (danger: $dangerColor, primary: $primaryColor, success: $successColor, secondary: $secondaryColor, info: $infoColor, warning: $warningColor);
