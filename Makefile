@@ -1,5 +1,5 @@
 build:
-	rm -rf dist
+	rm -rf examples/dist
 	npm run build
 
 transpile:
@@ -19,4 +19,8 @@ test-watch:
 	npm run test -- --watchAll
 
 publish:
-	npm publish
+	npm publish --access=public
+
+deploy:
+	npm run build
+	npm run deploy

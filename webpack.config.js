@@ -13,6 +13,10 @@ module.exports = {
       filename: '[name].css',
     }),
   ],
+  output: {
+    path: path.join(__dirname, 'examples/dist'),
+    filename: 'bundle.js',
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
