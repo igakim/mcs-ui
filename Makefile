@@ -18,6 +18,9 @@ test:
 test-watch:
 	npm run test -- --watchAll
 
+test-coverage:
+	npm run test -- --coverage
+
 publish:
 	npm publish --access=public
 
