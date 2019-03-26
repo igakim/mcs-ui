@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component should be disabled and have "mcs-button-primary" class 1`] = `
+<button
+  className="mcs-button mcs-button-primary"
+  disabled={true}
+  type=""
+>
+  Button
+</button>
+`;
+
+exports[`component should be disabled and have "mcs-button-primary" class 2`] = `
+<button
+  className="mcs-button mcs-button-primary"
+  disabled="disabled"
+  type=""
+>
+  Button
+</button>
+`;
+
+exports[`component should be disabled and have "mcs-button-primary" class 3`] = `
+<button
+  className="mcs-button mcs-button-primary"
+  disabled={true}
+  type=""
+>
+  Button
+</button>
+`;
+
+exports[`component should have "mcs-button-primary" class 1`] = `
+<button
+  className="mcs-button mcs-button-primary"
+  disabled={false}
+  type=""
+>
+  Button
+</button>
+`;
+
+exports[`component should match snapshot 1`] = `
+<button
+  className="mcs-button"
+  disabled={false}
+  type=""
+>
+  Button
+</button>
+`;

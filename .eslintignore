@@ -1,3 +1,4 @@
 node_modules
 dist
 examples/src/prism.js
+__tests__
