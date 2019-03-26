@@ -25,5 +25,11 @@ publish:
 	npm publish --access=public
 
 deploy:
-	npm run build
+	npm run styleguide-build
 	npm run deploy
+
+docserve:
+	npm run styleguide
+
+docbuild:
+	npm run styleguide-build

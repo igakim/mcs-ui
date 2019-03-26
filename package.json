@@ -10,7 +10,9 @@
     "transpile": "babel src -d dist && sass src/assets/scss:dist",
     "build": "webpack --mode production",
     "prepublishOnly": "npm run transpile",
-    "deploy": "surge ./examples/dist --domain mcs-ui-kit.surge.sh"
+    "styleguide": "styleguidist server",
+    "styleguide-build": "styleguidist build",
+    "deploy": "surge ./styleguide --domain mcs-ui-kit.surge.sh"
   },
   "author": "Igor Kim",
   "license": "ISC",
@@ -46,6 +48,7 @@
     "jest": "^24.5.0",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.10.0",
+    "react-styleguidist": "^9.0.4",
     "react-test-renderer": "^16.8.5",
     "sass": "^1.17.3",
     "sass-loader": "^7.1.0",
