@@ -5,10 +5,11 @@ import { getButtonType } from '../../utils';
 
 const Button = (props) => {
   const {
-    type, htmlType, size, disabled, stretched, ...rest
+    type, htmlType, size, disabled, stretched, rounded, ...rest
   } = props;
   const classes = {
-    'mcs-button': true,
+    'mcs-button': !rounded,
+    'mcs-button-rounded': rounded,
     [getButtonType(type)]: !!type,
     [getButtonType(size)]: !!size,
     'mcs-button-stretched': !!stretched,
@@ -26,12 +27,15 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  /** One of the following types: `primary`, `danger`, `warning`, `info`, `secondary`, `success` */
+  /** One of the following types:
+    `primary`, `danger`, `warning`, `info`, `secondary`, `success`, `light` */
   type: PropTypes.string,
   /** Any html type of button element */
   htmlType: PropTypes.string,
   /** One of the following types: `small`, `medium`, `big` */
   size: PropTypes.string,
+  /** Defines wheather button should be rounded */
+  rounded: PropTypes.bool,
   disabled: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.string,
