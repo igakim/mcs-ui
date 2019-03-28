@@ -11,4 +11,13 @@ module.exports = {
   },
   title: 'MCS React UI kit',
   usageMode: 'expand',
+  ignore: [
+    '**/__tests__/**',
+    '**/*.test.{js,jsx,ts,tsx}',
+    '**/*.spec.{js,jsx,ts,tsx}',
+    '**/*.d.ts',
+    '**/src/components/menu/Item.jsx',
+    '**/src/components/menu/Logo.jsx',
+    '**/src/components/menu/DropdownItem.jsx',
+  ],
 };

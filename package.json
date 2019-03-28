@@ -33,6 +33,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.4",
+    "babel-plugin-add-react-displayname": "0.0.5",
     "css-loader": "^1.0.1",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -64,6 +65,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.5",
+    "react-icons": "^3.5.0",
     "reselect": "^4.0.0"
   }
 }
