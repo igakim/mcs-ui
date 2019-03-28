@@ -1,0 +1,14 @@
+.mcs-card {
+  border-radius: 5px;
+  background-color: $lightColor;
+  &-image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  &-title-container {
+    padding: 1.4em;
+  }
+  &-title {
+    text-align: center;
+  }
+}
