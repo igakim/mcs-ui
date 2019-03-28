@@ -5,7 +5,7 @@ import { getButtonType } from '../../utils';
 
 const Button = (props) => {
   const {
-    type, htmlType, size, disabled, stretched, rounded, ...rest
+    type, htmlType, size, disabled, stretched, rounded, className, ...rest
   } = props;
   const classes = {
     'mcs-button': !rounded,
@@ -17,7 +17,7 @@ const Button = (props) => {
   return (
     <button
       type={htmlType || ''}
-      className={cn(classes)}
+      className={`${cn(classes)} ${className}`}
       disabled={disabled || false}
       {...rest}
     >

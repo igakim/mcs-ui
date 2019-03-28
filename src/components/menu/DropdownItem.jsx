@@ -32,10 +32,10 @@ class DropdownItem extends React.Component {
   }
 
   renderDropdownContainer = (onEnter, onLeave) => {
-    const { subItems = [] } = this.props;
+    const { subItems = [], className } = this.props;
 
     return (
-      <ul className="mcs-menu-dropdown" onMouseEnter={onEnter} onMouseLeave={onLeave}>
+      <ul className={`mcs-menu-dropdown ${className}`} onMouseEnter={onEnter} onMouseLeave={onLeave}>
         {subItems.map(el => (
           <li className="mcs-menu-dropdown-item" key={el.key}>
             <a href="#" className="mcs-menu-link">{el.title}</a>

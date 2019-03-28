@@ -19,5 +19,7 @@ module.exports = {
     '**/src/components/menu/Item.jsx',
     '**/src/components/menu/Logo.jsx',
     '**/src/components/menu/DropdownItem.jsx',
+    '**/src/components/card/CardImage.jsx',
+    '**/src/components/card/CardTitle.jsx',
   ],
 };

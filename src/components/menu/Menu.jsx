@@ -11,24 +11,24 @@ import DropdownItem from './DropdownItem';
  */
 class Menu extends React.Component {
   render() {
-    const { children } = this.props;
+    const { children = [], className, ...rest } = this.props;
 
     const menuItems = children
-      ? children.filter(el => el.type.displayName === 'Item' || el.type.displayName === 'DropdownItem')
+      ? React.Children.toArray(children).filter(el => el.type.displayName === 'Item' || el.type.displayName === 'DropdownItem')
       : null;
 
     const logo = children
-      ? children.filter(el => el.type.displayName === 'Logo')
+      ? React.Children.toArray(children).filter(el => el.type.displayName === 'Logo')
       : null;
 
     const side = children
-      ? children.filter(({ type: { displayName } }) => displayName !== 'Item' && displayName !== 'Logo' && displayName !== 'DropdownItem')
+      ? React.Children.toArray(children).filter(({ type: { displayName } }) => displayName !== 'Item' && displayName !== 'Logo' && displayName !== 'DropdownItem')
       : null;
 
     const { theme } = this.props;
 
     return (
-      <div className={`mcs-menu ${theme}`}>
+      <div className={`mcs-menu ${theme} ${className}`} {...rest}>
         {logo}
         <div className="mcs-menu-items">
           <ul className="mcs-menu-list">
