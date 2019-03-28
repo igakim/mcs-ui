@@ -24,7 +24,12 @@
       border-color: $borderColor;
     }
   }
+  &-logo {
+    align-self: center;
+  }
+
   &-items {
+    align-self: center;
     margin-left: 2rem;
   }
   &-list {
@@ -40,6 +45,12 @@
   &-toggler {
     margin-left: auto;
   }
+
+  // Side Styles
+  &-side {
+    margin-left: auto;
+  }
+  // End Side Styles
 
   // Dropdown styles
   &-dropdown {

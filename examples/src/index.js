@@ -5,10 +5,11 @@ import './prism';
 
 import '../../src/assets/scss/index.scss';
 import ButtonSection from './components/button';
-
+import Navbar from './components/Menu';
 
 const App = () => (
     <div className="container">
+      <Navbar />
       <div>
         <h1>Components</h1>
       </div>

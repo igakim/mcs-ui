@@ -6,12 +6,25 @@ import Item from './Item';
 import DropdownItem from './DropdownItem';
 
 /**
- * Menu component includes `Item` and `Logo` components as well. See example's source code.
+ * Menu component includes `Item`, `Logo`, `DropdownItem` components as well.
+ * See example's source code.
  */
 class Menu extends React.Component {
   render() {
-    const menuItems = this.props.children.filter(el => el.type.displayName === 'Item' || el.type.displayName === 'DropdownItem');
-    const logo = this.props.children.filter(el => el.type.displayName === 'Logo');
+    const { children } = this.props;
+
+    const menuItems = children
+      ? children.filter(el => el.type.displayName === 'Item' || el.type.displayName === 'DropdownItem')
+      : null;
+
+    const logo = children
+      ? children.filter(el => el.type.displayName === 'Logo')
+      : null;
+
+    const side = children
+      ? children.filter(({ type: { displayName } }) => displayName !== 'Item' && displayName !== 'Logo' && displayName !== 'DropdownItem')
+      : null;
+
     const { theme } = this.props;
 
     return (
@@ -21,6 +34,9 @@ class Menu extends React.Component {
           <ul className="mcs-menu-list">
             {menuItems}
           </ul>
+        </div>
+        <div className="mcs-menu-side">
+          {side}
         </div>
         <button type="button" className="mcs-menu-toggler hide">- - -</button>
       </div>

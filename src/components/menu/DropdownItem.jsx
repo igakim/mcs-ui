@@ -32,7 +32,7 @@ class DropdownItem extends React.Component {
   }
 
   renderDropdownContainer = (onEnter, onLeave) => {
-    const { subItems } = this.props;
+    const { subItems = [] } = this.props;
 
     return (
       <ul className="mcs-menu-dropdown" onMouseEnter={onEnter} onMouseLeave={onLeave}>
@@ -67,7 +67,7 @@ class DropdownItem extends React.Component {
     return (
       <li className="mcs-menu-item dropdown-item" {...rest}>
         <a href="#" className="mcs-menu-link dropdown-link" style={styles} onMouseEnter={this.handleEnterLink} onMouseLeave={this.handleLeaveLink}>
-          {children} <IoIosArrowDown size=".7em" style={ { 'vertical-align': 'middle' } } />
+          {children} <IoIosArrowDown size=".7em" style={ { verticalAlign: 'middle' } } />
         </a>
         {mouseOverLink || mouseOverMenu
           ? this.renderDropdownContainer(this.handleEnterMenu, this.handleLeaveMenu)
