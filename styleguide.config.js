@@ -11,6 +11,9 @@ module.exports = {
   },
   title: 'MCS React UI kit',
   usageMode: 'expand',
+  moduleAliases: {
+    'mcs-ui-kit': path.resolve(__dirname, 'src'),
+  },
   ignore: [
     '**/__tests__/**',
     '**/*.test.{js,jsx,ts,tsx}',
@@ -22,5 +25,6 @@ module.exports = {
     '**/src/components/card/CardImage.jsx',
     '**/src/components/card/CardTitle.jsx',
     '**/src/components/section/SectionCell.jsx',
+    '**/src/components/form/Input.jsx',
   ],
 };
