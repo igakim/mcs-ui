@@ -40,6 +40,16 @@ exports[`component should have "mcs-button-primary" class 1`] = `
 </button>
 `;
 
+exports[`component should have user classes as well 1`] = `
+<button
+  className="mcs-button mcs-button-primary super-class"
+  disabled={false}
+  type=""
+>
+  Button
+</button>
+`;
+
 exports[`component should match snapshot 1`] = `
 <button
   className="mcs-button"

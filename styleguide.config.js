@@ -21,5 +21,6 @@ module.exports = {
     '**/src/components/menu/DropdownItem.jsx',
     '**/src/components/card/CardImage.jsx',
     '**/src/components/card/CardTitle.jsx',
+    '**/src/components/section/SectionCell.jsx',
   ],
 };

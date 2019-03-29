@@ -1,4 +1,4 @@
-import { isEqualTypes, getButtonType } from '../src/utils';
+import { isEqualTypes, getButtonType, getClassNameFromArray } from '../src/utils';
 
 const types = {
   success: 'success',
@@ -29,4 +29,17 @@ it('[getButtonType] should work with given arguments', () => {
 
   expect(getButtonType()).toBeUndefined();
   expect(getButtonType(types.doesntExist)).toBeUndefined();
+});
+
+it('[getClassNameFromArray] shoud work with empty array or with undefined/null elements', () => {
+  expect(getClassNameFromArray([])).toBe('');
+  expect(getClassNameFromArray([null, undefined])).toBe('');
+});
+
+it('[getClassNameFromArray] shoud work with strings', () => {
+  expect(getClassNameFromArray(['mcs', 'size', '1'])).toBe('mcs-size-1');
+});
+
+it('[getClassNameFromArray] shoud work with any primitive types', () => {
+  expect(getClassNameFromArray(['mcs', false, 3])).toBe('mcs-false-3');
 });

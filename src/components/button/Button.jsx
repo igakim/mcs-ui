@@ -14,10 +14,13 @@ const Button = (props) => {
     [getButtonType(size)]: !!size,
     'mcs-button-stretched': !!stretched,
   };
+
+  const userClasses = className ? ` ${className}` : '';
+
   return (
     <button
       type={htmlType || ''}
-      className={`${cn(classes)} ${className}`}
+      className={`${cn(classes)}${userClasses}`}
       disabled={disabled || false}
       {...rest}
     >

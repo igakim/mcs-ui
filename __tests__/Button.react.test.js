@@ -35,3 +35,11 @@ test('component should be disabled and have "mcs-button-primary" class', () => {
   expect(tree2).toMatchSnapshot();
   expect(tree3).toMatchSnapshot();
 });
+
+test('component should have user classes as well', () => {
+  const component = renderer.create(
+    <Button type="primary" className="super-class">Button</Button>,
+  );
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
