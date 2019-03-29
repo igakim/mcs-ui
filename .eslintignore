@@ -1,4 +1,7 @@
 node_modules
 dist
+coverage
+styleguide
+examples/dist
 examples/src/prism.js
 __tests__
