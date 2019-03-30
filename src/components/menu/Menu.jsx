@@ -28,7 +28,7 @@ class Menu extends React.Component {
     const { theme } = this.props;
 
     return (
-      <div className={`mcs-menu ${theme} ${className}`} {...rest}>
+      <div className={`mcs-menu ${theme || ''} ${className || ''}`} {...rest}>
         {logo}
         <div className="mcs-menu-items">
           <ul className="mcs-menu-list">

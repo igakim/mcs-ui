@@ -1,22 +1,46 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './prism.css';
-import './prism';
+import { FiPlus } from 'react-icons/fi';
+
+import { Menu, Button, Section } from '../../src';
 
 import '../../src/assets/scss/index.scss';
-import ButtonSection from './components/button';
-import Navbar from './components/Menu';
-import Layout from './components/Layout';
+import './assets/scss/index.scss';
 
-const App = () => (
-    <div className="container">
-      <Navbar />
-      <div>
-        <h1>Components</h1>
-      </div>
-      <ButtonSection />
-      <Layout />
-    </div>
+import logo from './assets/img/logo.svg';
+import addIcon from './assets/img/add.svg';
+import shareIcon from './assets/img/share-arrow.svg';
+
+const categories = [
+  {
+    title: 'Банки',
+    key: 'banks',
+  },
+  {
+    title: 'Строительные компании',
+    key: 'building',
+  },
+  {
+    title: 'Платежные системы',
+    key: 'payments',
+  },
+];
+
+const Navbar = () => (
+<Section>
+  <Section.SectionCell lg={12}>
+    <Menu theme="transparent">
+      <Menu.Logo src={logo} style={{ marginRight: '4em' }} />
+      <Menu.DropdownItem subItems={categories} textColor="#fff">Категории</Menu.DropdownItem>
+      <Menu.Item textColor="#fff">О сервисе</Menu.Item>
+      <Button type="light" style={{ fontSize: 14, verticalAlign: 'center', marginRight: 27 }}>
+        <img src={addIcon} style={{ marginRight: 5 }} /> Добавить логотип
+      </Button>
+      <Button type="light" rounded><img src={shareIcon} /></Button>
+    </Menu>
+  </Section.SectionCell>
+</Section>
 );
 
-render(<App />, document.getElementById('root'));
+
+render(<Navbar />, document.getElementById('header-nav'));

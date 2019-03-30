@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import SectionCell from './SectionCell';
 
@@ -7,8 +8,10 @@ import SectionCell from './SectionCell';
  */
 class Section extends React.Component {
   render() {
-    const TagName = this.props.tagName;
-    const { children, className, ...rest } = this.props;
+    const {
+      children, className, tagName, ...rest
+    } = this.props;
+    const TagName = tagName || 'div';
     const userClasses = className || '';
 
     return (
@@ -20,5 +23,14 @@ class Section extends React.Component {
 }
 
 Section.SectionCell = SectionCell;
+
+Section.propTypes = {
+  /** Defines element html tag */
+  tagName: PropTypes.string,
+};
+
+Section.defaultProps = {
+  tagName: 'div',
+};
 
 export default Section;

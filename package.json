@@ -1,6 +1,6 @@
 {
   "name": "mcs-ui-kit",
-  "version": "0.0.1b",
+  "version": "0.0.1c",
   "description": "MCS React Components",
   "main": "dist/index.js",
   "scripts": {
