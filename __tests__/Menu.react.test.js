@@ -62,9 +62,7 @@ test('<Menu /> component should match snapshot', () => {
   component.find('.dropdown-link').simulate('mouseenter');
   component.find('.mcs-menu-dropdown').simulate('mouseenter');
 
-  setTimeout(() => {
-    expect(component.exists('.mcs-menu-dropdown')).toBeTruthy()
-  }, 500);
+  expect(component.exists('.mcs-menu-dropdown')).toBeTruthy();
 
   component.find('.mcs-menu-dropdown').simulate('mouseleave');
 
