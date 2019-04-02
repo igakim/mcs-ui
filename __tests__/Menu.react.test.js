@@ -54,10 +54,21 @@ test('<Menu /> component should match snapshot', () => {
   component.find('.dropdown-link').simulate('mouseenter');
   expect(component.exists('.mcs-menu-dropdown')).toBeTruthy();
   component.find('.dropdown-link').simulate('mouseleave');
-  setTimeout(expect(component.exists('.mcs-menu-dropdown')).toBeFalsy, 400);
+
+  setTimeout(() => {
+    expect(component.exists('.mcs-menu-dropdown')).toBeFalsy()
+  }, 400);
+
   component.find('.dropdown-link').simulate('mouseenter');
   component.find('.mcs-menu-dropdown').simulate('mouseenter');
-  setTimeout(expect(component.exists('.mcs-menu-dropdown')).toBeTruthy, 500);
+
+  setTimeout(() => {
+    expect(component.exists('.mcs-menu-dropdown')).toBeTruthy()
+  }, 500);
+
   component.find('.mcs-menu-dropdown').simulate('mouseleave');
-  setTimeout(expect(component.exists('.mcs-menu-dropdown')).toBeFalsy, 500);
+
+  setTimeout(() => {
+    expect(component.exists('.mcs-menu-dropdown')).toBeFalsy()
+  }, 500);
 });
