@@ -34,7 +34,14 @@ Menu example:
 
 | Prop name       | Type           | Default       | Description                                       |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">`textColor`</span> | <span class="rsg--type-39">`string`</span> | #000 | <p class="rsg--para-40">Defines the text color</p> |
+| <span class="rsg--name-37">`textColor`</span> | <span class="rsg--type-39">`string`</span> | #000 | <div class="rsg--para-40">Defines the text color</div> |
+| <span class="rsg--name-37">`to`</span> | <span class="rsg--type-39">`string`</span> | # | <div class="rsg--para-40">URL</div> |
+
+
+
+
+
+
 
 ### Menu.DropdownItem
 *DropdownItem component should be used inside Menu component only*
@@ -43,7 +50,7 @@ Menu example:
 
 | Prop name       | Type           | Default       | Description                                        |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">`subItems`</span>      | <span class="rsg--type-39">`array`</span>          | none         | <p class="rsg--para-40">List of dropdown items.</p>   |
+| <span class="rsg--name-37">`subItems`</span>      | <span class="rsg--type-39">`array`</span>          | none         | <div class="rsg--para-40">List of dropdown items.</div>   |
 
 #### Dropdown Item
 
@@ -56,6 +63,11 @@ Menu example:
 }
 ```
 
+
+
+
+
+
 ### Menu.Logo
 *Logo component should be used inside Menu component only*
 
@@ -63,6 +75,8 @@ Menu example:
 
 | Prop name       | Type           | Default       | Description                                        |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">`textColor`</span>      | <span class="rsg--type-39">`string`</span>          | #000         | <p class="rsg--para-40">Defines the text color</p>   |
+| <span class="rsg--name-37">`textColor`</span>      | <span class="rsg--type-39">`string`</span>          | #000         | <div class="rsg--para-40">Defines the text color</div>   |
+| <span class="rsg--name-37">`src`</span>      | <span class="rsg--type-39">`string`</span>          | none         | <div class="rsg--para-40">Logo picture</div>   |
+| <span class="rsg--name-37">`type`</span>      | <span class="rsg--type-39">`string`</span>          | none         | <div class="rsg--para-40">Must be specified in order to define a text logo or image logo</div>   |
 
 ---

@@ -26,5 +26,6 @@ module.exports = {
     '**/src/components/card/CardTitle.jsx',
     '**/src/components/section/SectionCell.jsx',
     '**/src/components/form/Input.jsx',
+    '**/src/components/form/SearchInput.jsx',
   ],
 };

@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> component should match snapshot 1`] = `
+<div
+  className="mcs-menu  "
+>
+  <div
+    className="mcs-menu-logo "
+  >
+    <a
+      className="mcs-menu-link"
+      href="/"
+      style={
+        Object {
+          "color": "#fff",
+        }
+      }
+    />
+  </div>
+  <div
+    className="mcs-menu-items"
+  >
+    <ul
+      className="mcs-menu-list"
+    >
+      <li
+        className="mcs-menu-item "
+      >
+        <a
+          className="mcs-menu-link"
+          href="/home"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="mcs-menu-item "
+      >
+        <a
+          className="mcs-menu-link"
+          href="/article"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Article
+        </a>
+      </li>
+      <li
+        className="mcs-menu-item "
+      >
+        <a
+          className="mcs-menu-link"
+          href="/blog"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Blog
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="mcs-menu-side"
+  />
+  <button
+    className="mcs-menu-toggler hide"
+    type="button"
+  >
+    - - -
+  </button>
+</div>
+`;
+
+exports[`<Menu /> component should match snapshot 2`] = `
+<div
+  className="mcs-menu  "
+>
+  <div
+    className="mcs-menu-logo "
+  >
+    <a
+      className="mcs-menu-link"
+      href="/"
+      style={
+        Object {
+          "color": "#f00",
+        }
+      }
+    >
+      Logo Text
+    </a>
+  </div>
+  <div
+    className="mcs-menu-items"
+  >
+    <ul
+      className="mcs-menu-list"
+    >
+      <li
+        className="mcs-menu-item "
+      >
+        <a
+          className="mcs-menu-link"
+          href="/blog"
+          style={
+            Object {
+              "color": "white",
+            }
+          }
+        >
+          Blog
+        </a>
+      </li>
+      <li
+        className="mcs-menu-item dropdown-item"
+      >
+        <a
+          className="mcs-menu-link dropdown-link"
+          href="#"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+        >
+           
+          <svg
+            fill="currentColor"
+            height=".7em"
+            size=".7em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 512 512"
+            width=".7em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="mcs-menu-side"
+  />
+  <button
+    className="mcs-menu-toggler hide"
+    type="button"
+  >
+    - - -
+  </button>
+</div>
+`;

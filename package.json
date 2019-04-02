@@ -35,12 +35,16 @@
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "acorn": "^6.0.5",
+    "acorn-jsx": "^5.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.4",
     "babel-plugin-add-react-displayname": "0.0.5",
     "css-loader": "^1.0.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-flowtype": "^2.50.3",
@@ -63,9 +67,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14",
-    "acorn": "^6.0.5",
-    "acorn-jsx": "^5.0.0"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",

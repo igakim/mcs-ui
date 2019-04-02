@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component should match snapshot 1`] = `
+<div
+  className="mcs-section "
+>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-6 lg-6 xl-4 "
+  >
+    Some super text
+  </div>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-6 lg-6 xl-4 "
+  >
+    Some other text
+  </div>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-12 lg-12 xl-4 "
+  >
+    Some long long long (no) text
+  </div>
+</div>
+`;
+
+exports[`component should match snapshot 2`] = `
+<div
+  className="mcs-section center"
+>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-6 lg-6 xl-4 "
+  >
+    Some super text
+  </div>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-6 lg-6 xl-4 "
+  >
+    Some other text
+  </div>
+  <div
+    className="mcs-section-cell xs-12 sm-12 md-12 lg-12 xl-4 "
+  >
+    Some long long long (no) text
+  </div>
+</div>
+`;

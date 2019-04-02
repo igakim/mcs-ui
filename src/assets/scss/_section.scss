@@ -10,6 +10,7 @@
     box-sizing: border-box;
     flex: 0 0 100%;
     max-width: 100%;
+    padding: .5em;
     @media (min-width: 0) {
       @include set-cells-sizes(xs, 12);
     }

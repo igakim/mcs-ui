@@ -1,4 +1,14 @@
-import { isEqualTypes, getButtonType, getClassNameFromArray } from '../src/utils';
+import React from 'react';
+import { Menu } from '../src';
+
+import {
+  isEqualTypes,
+  getButtonType,
+  getClassNameFromArray,
+  isClassComponent,
+  isFunctionComponent,
+  isReactComponent,
+} from '../src/utils';
 
 const types = {
   success: 'success',
@@ -42,4 +52,35 @@ it('[getClassNameFromArray] shoud work with strings', () => {
 
 it('[getClassNameFromArray] shoud work with any primitive types', () => {
   expect(getClassNameFromArray(['mcs', false, 3])).toBe('mcs-false-3');
+});
+
+it('[isClassComponent] should work', () => {
+  const { Item, Logo } = Menu;
+
+  expect(isClassComponent(Menu)).toBeTruthy();
+  expect(isClassComponent(Item)).toBeFalsy();
+  expect(isClassComponent(Logo)).toBeFalsy();
+});
+
+it('[isFunctionComponent] should work', () => {
+  const { Item, Logo } = Menu;
+
+  expect(isFunctionComponent(Item)).toBeTruthy();
+  expect(isFunctionComponent(Logo)).toBeTruthy();
+  expect(isFunctionComponent(Menu)).toBeFalsy();
+});
+
+it('[isReactComponent] should return true', () => {
+  const { Item, Logo } = Menu;
+
+  expect(isReactComponent(Item)).toBeTruthy();
+  expect(isReactComponent(Logo)).toBeTruthy();
+  expect(isReactComponent(Menu)).toBeTruthy();
+});
+
+it('[isReactComponent] should return false', () => {
+  const { Item, Logo } = Menu;
+
+  expect(isReactComponent(123)).toBeFalsy();
+  expect(isReactComponent('Hello')).toBeFalsy();
 });

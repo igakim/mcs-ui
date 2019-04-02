@@ -9,8 +9,10 @@ class Card extends React.Component {
     const image = React.Children.toArray(children).filter(ch => ch.type.displayName === 'CardImage');
     const title = React.Children.toArray(children).filter(ch => ch.type.displayName === 'CardTitle');
 
+    const userClasses = className || '';
+
     return (
-      <div className={`mcs-card ${className}`} {...rest}>
+      <div className={`mcs-card ${userClasses}`} {...rest}>
         {image}
         {title}
       </div>

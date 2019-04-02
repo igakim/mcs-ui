@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Input from './Input';
+import SearchInput from './SearchInput';
 
 class Form extends React.Component {
   constructor(props) {
@@ -35,9 +36,19 @@ class Form extends React.Component {
   }
 
   handleSubmit = (e) => {
-    const { onSubmit } = this.props;
+    const { onSubmit, children } = this.props;
+    const textInputsList = React.Children
+      .toArray(children)
+      .filter(el => el.props.type === 'text')
+      .reduce((acc, el) => ({
+        ...acc,
+        [el.props.name]: {
+          value: el.props.defaultValue || '',
+        },
+      }), {});
     e.preventDefault();
     onSubmit(this.state.fields);
+    this.setState({ fields: textInputsList });
   }
 
   render() {
@@ -46,9 +57,15 @@ class Form extends React.Component {
     } = this.props;
 
     const userClasses = className || '';
-
     const wrappedChildren = React.Children
-      .map(children, child => React.cloneElement(child, { onChange: this.handleInputChange }));
+      .map(
+        children,
+        child => React
+          .cloneElement(child, {
+            onChange: this.handleInputChange,
+            value: this.state.fields[child.props.name],
+          }),
+      );
 
     return (
       <form className={`mcs-form ${userClasses}`} {...rest} onSubmit={this.handleSubmit}>
@@ -59,5 +76,6 @@ class Form extends React.Component {
 }
 
 Form.Input = Input;
+Form.SearchInput = SearchInput;
 
 export default Form;

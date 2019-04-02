@@ -2,12 +2,13 @@ import React from 'react';
 
 const Logo = (props) => {
   const {
-    children, textColor, className, src, ...rest
+    children, textColor = '#fff', className = '', src, type, ...rest
   } = props;
+  const child = type === 'image' ? <img src={src} /> : children;
   return (
     <div className={`mcs-menu-logo ${className}`} {...rest}>
       <a href="/" className="mcs-menu-link" style={{ color: textColor }}>
-        <img src={src} />
+        {child}
       </a>
     </div>
   );

@@ -16,7 +16,7 @@ const { CardImage, CardTitle } = Card;
 
 | Prop name       | Type           | Default       | Description                                       |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">`src`</span> | <span class="rsg--type-39">`union`</span> | none | <p class="rsg--para-40">Path to image or image source</p> |
+| <span class="rsg--name-37">`src`</span> | <span class="rsg--type-39">`union`</span> | none | <div class="rsg--para-40">Path to image or image source</div> |
 
 ### Card.CardTitle
 *CardTitle component should be used inside Card component only*
@@ -25,6 +25,6 @@ const { CardImage, CardTitle } = Card;
 
 | Prop name       | Type           | Default       | Description                                       |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">``</span> | <span class="rsg--type-39">``</span> | none | <p class="rsg--para-40"></p> |
+| <span class="rsg--name-37">``</span> | <span class="rsg--type-39">``</span> | none | <div class="rsg--para-40"></div> |
 
 ---

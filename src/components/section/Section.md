@@ -23,11 +23,11 @@ const { SectionCell } = Section;
 
 | Prop name       | Type           | Default       | Description                                       |
 | :------------- | :------------- | :------------ | :------------------------------------------------- |
-| <span class="rsg--name-37">`xs`</span> | <span class="rsg--type-39">`number`</span> | none | <p class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **extra small** screens</p> |
-| <span class="rsg--name-37">`sm`</span> | <span class="rsg--type-39">`number`</span> | none | <p class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **small** screens</p> |
-| <span class="rsg--name-37">`md`</span> | <span class="rsg--type-39">`number`</span> | none | <p class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **medium** screens</p> |
-| <span class="rsg--name-37">`lg`</span> | <span class="rsg--type-39">`number`</span> | none | <p class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **large** screens</p> |
-| <span class="rsg--name-37">`xl`</span> | <span class="rsg--type-39">`number`</span> | none | <p class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **extra large** screens</p> |
+| <span class="rsg--name-37">`xs`</span> | <span class="rsg--type-39">`number`</span> | none | <div class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **extra small** screens</div> |
+| <span class="rsg--name-37">`sm`</span> | <span class="rsg--type-39">`number`</span> | none | <div class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **small** screens</div> |
+| <span class="rsg--name-37">`md`</span> | <span class="rsg--type-39">`number`</span> | none | <div class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **medium** screens</div> |
+| <span class="rsg--name-37">`lg`</span> | <span class="rsg--type-39">`number`</span> | none | <div class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **large** screens</div> |
+| <span class="rsg--name-37">`xl`</span> | <span class="rsg--type-39">`number`</span> | none | <div class="rsg--para-40">Min value: 1, Max value: 12. Defines the block width for **extra large** screens</div> |
 
 #### Screen sizes:
 

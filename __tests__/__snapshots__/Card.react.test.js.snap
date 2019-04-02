@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component should match snapshot 1`] = `
+<div
+  className="mcs-card "
+>
+  <div
+    className="mcs-card-image-container "
+  >
+    <img
+      className="mcs-card-image"
+      src="path/to/pic.jpg"
+    />
+  </div>
+  <div
+    className="mcs-card-title-container undefined"
+  >
+    <h3
+      className="mcs-card-title"
+    >
+      Card Title
+    </h3>
+  </div>
+</div>
+`;

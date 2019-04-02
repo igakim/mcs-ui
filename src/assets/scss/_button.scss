@@ -8,6 +8,9 @@
   -webkit-box-shadow: 0px 5px 23px rgba(0, 0, 0, .08);
   -moz-box-shadow:    0px 5px 23px rgba(0, 0, 0, .08);
   box-shadow:         0px 5px 23px rgba(0, 0, 0, .08);
+  &:focus {
+    outline: none;
+  }
   &:disabled {
     background-color: lighten(grey, 30%);
     border: 1px solid lighten(grey, 30%);

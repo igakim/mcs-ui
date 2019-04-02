@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component should match snapshot 1`] = `
+<form
+  className="mcs-form "
+  onSubmit={[Function]}
+>
+  <input
+    className="mcs-form-input "
+    name="login"
+    onChange={[Function]}
+    placeholder="Enter your name"
+    type="text"
+    value=""
+  />
+  <input
+    className="mcs-form-input "
+    name="password"
+    onChange={[Function]}
+    placeholder="Your password"
+    type="password"
+  />
+  <button
+    className="mcs-button mcs-button-primary"
+    disabled={false}
+    onChange={[Function]}
+    type="submit"
+  >
+    Log in
+  </button>
+</form>
+`;
+
+exports[`component should match snapshot 2`] = `
+<form
+  className="mcs-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="mcs-form-search "
+  >
+    <input
+      className="mcs-form-search-input"
+      name="login"
+      onChange={[Function]}
+      placeholder="Enter your name"
+      type="text"
+      value=""
+    />
+    <button
+      className="mcs-form-search-submit"
+      type="submit"
+    >
+      Find
+    </button>
+  </div>
+</form>
+`;
+
+exports[`component should match snapshot 3`] = `
+<form
+  className="mcs-form "
+  onSubmit={[Function]}
+>
+  <div
+    className="mcs-form-search "
+  >
+    <button
+      className="mcs-form-search-prefix"
+      onClick={[Function]}
+      type="button"
+    >
+      O
+    </button>
+    <input
+      className="mcs-form-search-input-prefix"
+      name="login"
+      onChange={[Function]}
+      placeholder="Enter your name"
+      type="text"
+      value=""
+    />
+    <button
+      className="mcs-form-search-submit"
+      type="submit"
+    >
+      Find
+    </button>
+  </div>
+</form>
+`;
